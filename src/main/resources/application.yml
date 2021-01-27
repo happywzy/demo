@@ -1,0 +1,17 @@
+server:
+  port: 18080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.41.128:3306/demo?useUnicode=true&characterEncoding=utf8&useSSL=false
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+demo:
+  limit: ${USER_LIMIT:15}
+  xxx: aa
